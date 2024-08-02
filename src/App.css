@@ -61,3 +61,7 @@ html, body, #root, .App {
 .btn:hover:not(:disabled) {
   background-color: #7d5216; 
 }
+.heading{
+  justify-content: center;
+  margin-left: 100px;
+}

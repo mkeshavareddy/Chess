@@ -81,6 +81,7 @@ const Board = () => {
 
   return (
     <div>
+      <h1 className="heading">Chess Game</h1>
       <UndoButton onClick={handleUndo} disabled={history.length === 0} />
       <div className="board">
         {board.map((row, rIdx) => (
