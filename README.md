@@ -31,4 +31,4 @@ This React project implements a simple board game where cells on an 8x8 grid can
    git clone https://github.com/mkeshavareddy/Chess
 
 2.Live on Netlify
-
+      https://effervescent-seahorse-c55a97.netlify.app
