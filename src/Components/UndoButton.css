@@ -1,0 +1,21 @@
+.btn {
+    font-size: 24px;
+    margin-bottom: 30px; 
+    padding: 16px 32px;
+    border-radius: 8px;
+    background-color: #ffa215; 
+    color: rgb(5, 5, 5); 
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+  }
+  
+  .btn:disabled {
+    background-color: #ccc; 
+    cursor: not-allowed;
+  }
+  
+  .btn:hover:not(:disabled) {
+    background-color: #7d5216; 
+  }
+  
