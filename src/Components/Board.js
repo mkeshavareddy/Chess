@@ -23,11 +23,10 @@ const Board = () => {
     const changes = [];
     let currentState = null;
 
-    // Clear the previous cell and its diagonals
+  
     if (previousCell) {
       currentState = board.map(row => row.map(cell => ({ ...cell })));
 
-      // Clear previous clicked cell and its diagonals
       for (let i = -7; i <= 7; i++) {
         if (previousCell.row + i >= 0 && previousCell.row + i < 8 && previousCell.col + i >= 0 && previousCell.col + i < 8) {
           newBoard[previousCell.row + i][previousCell.col + i].color = (previousCell.row + previousCell.col) % 2 === 0 ? 'white' : 'black';
@@ -42,7 +41,7 @@ const Board = () => {
       changes.push([previousCell.row, previousCell.col, currentState[previousCell.row][previousCell.col].color]);
     }
 
-    // Mark the new clicked cell and its diagonals red
+
     for (let i = -7; i <= 7; i++) {
       if (row + i >= 0 && row + i < 8 && col + i >= 0 && col + i < 8) {
         newBoard[row + i][col + i].color = 'red';
